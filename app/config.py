@@ -17,10 +17,12 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     openai_api_key: str = ''
+    openrouter_api_key: str = ''
     pinecone_api_key: str = ''
     tavily_api_key: str = ''
     pinecone_index: str = 'medguide-agent-demo'
     openai_chat_model: str = 'gpt-4.1-mini'
+    openrouter_embed_model: str = 'nvidia/llama-nemotron-embed-vl-1b-v2:free'
     openai_embed_model: str = 'text-embedding-3-small'
     openai_vision_model: str = 'gpt-4.1-mini'
     api_token: str = ''
